@@ -82,6 +82,7 @@ int main() {
     while(gameover==0) {
         gotoxy(52,2);
         printf("Pontos: %d", pontos);
+        gotoxy(52,4);
         c[0][0]=cx;
         c[0][1]=cy;
 
@@ -96,7 +97,7 @@ int main() {
             }
         }
 
-        if(tecla=='a' || tecla=='A' || tecla=='75') {
+        if(tecla=='a' || tecla=='A' || tecla==75) {
             cx--;
             if(cx==0) {
                 break;
@@ -104,7 +105,7 @@ int main() {
         }
 
         if(tecla=='s' || tecla=='S' || tecla==80) {
-            cx++;
+            cy++;
             if(cx==50) {
                 break;
             }
